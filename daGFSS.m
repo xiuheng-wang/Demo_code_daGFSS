@@ -112,3 +112,9 @@ if mode == 1
         tdaGFSS(i, :) = W(i, :) * VT;
     end
 end
+
+figure;
+for i = 1:N
+    plot(tdaGFSS(i, :));
+    hold on;
+end
